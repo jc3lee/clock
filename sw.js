@@ -1,16 +1,16 @@
-const cacheName = "STATIC_CACHE_1"
+const cacheName = "STATIC_CACHE_2"
 
 const resourcesToCache = [
-  "./src/index.html",
-  "./src/main.js",
-  "./src/moment.js",
-  "./src/output.css",
-  "./src/assets/images/morning.jpg",
-  "./src/assets/images/afternoon.jpg",
-  "./src/assets/images/evening.jpg",
-  "./src/assets/fonts/Merriweather-Regular.ttf",
-  "./src/assets/fonts/Merriweather-Bold.ttf",
-  "./src/assets/fonts/Orbitron-VariableFont_wght.ttf",
+  "./index.html",
+  "./main.js",
+  "./moment.js",
+  "./output.css",
+  "./assets/images/morning.jpg",
+  "./assets/images/afternoon.jpg",
+  "./assets/images/evening.jpg",
+  "./assets/fonts/Merriweather-Regular.ttf",
+  "./assets/fonts/Merriweather-Bold.ttf",
+  "./assets/fonts/Orbitron-VariableFont_wght.ttf",
 ]
 
 self.addEventListener("install", e => {

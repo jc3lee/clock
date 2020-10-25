@@ -1,0 +1,30 @@
+{
+  "name": "My Clock",
+  "short_name": "Clock",
+  "theme_color": "#48955c",
+  "background_color": "#44a032",
+  "display": "minimal-ui",
+  "description": "Clock Clock Clock",
+  "orientation": "portrait-primary",
+  "scope": "https://ljc-dev.github.io/clock/",
+  "start_url": "https://ljc-dev.github.io/clock/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./assets/icons/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/icons/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./assets/icons/mask-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

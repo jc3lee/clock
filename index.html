@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome</title>
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="manifest" href="./manifest.json">
   <style>
     .morning {
       background-image: url("./assets/images/morning.jpg");
@@ -51,7 +52,7 @@
   <script src="main.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js")
+      navigator.serviceWorker.register(".clock/sw.js")
         .then(() => console.log("registered"))
         .catch(err => console.log("error registering", err.message))
     }

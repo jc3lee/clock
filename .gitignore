@@ -1,5 +1,5 @@
 node_modules
-src/styles.css
+src
 package-lock.json
 package.json
 postcss.config.js
