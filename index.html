@@ -52,7 +52,7 @@
   <script src="main.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register(".clock/sw.js")
+      navigator.serviceWorker.register("./sw.js")
         .then(() => console.log("registered"))
         .catch(err => console.log("error registering", err.message))
     }
