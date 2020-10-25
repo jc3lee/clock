@@ -13,10 +13,6 @@ function updateTime() {
   let hours = date.getHours()
   let mins = date.getMinutes()
   let secs = date.getSeconds()
-  hours -= 2
-  if (hours < 0) {
-    hours += 23
-  }
   let amPm = hours < 12 ? "AM" : "PM"
   hours = hours % 12 || 12
   myTime.innerHTML = `${addZero(hours)}:${addZero(mins)}:${addZero(secs)} ${amPm}`
