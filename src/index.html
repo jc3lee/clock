@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="output.css">
+  <style>
+    .morning {
+      background-image: url("./assets/images/morning.jpg");
+    }
+
+    .afternoon {
+      background-image: url("./assets/images/afternoon.jpg");
+    }
+
+    .evening {
+      background-image: url("./assets/images/evening.jpg");
+    }
+
+    .selectNone {
+      user-select: none;
+    }
+
+    ::-moz-selection,
+    ::selection {
+      color: #dddddd;
+      background: #333333;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    class="mainBg morning bg-cover bg-center bg-no-repeat font-merri min-h-screen min-w-full w-screen flex flex-col items-center">
+    <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mt-24 md:mt-28 font-bold"><span id="greeting"
+        class="selectNone text-gray-100">Good morning, </span><span id="username" class="text-gray-100 px-2"
+        contenteditable="true"></span></p>
+    <p id="currentTime"
+      class="mt-6 text-4xl sm:text-5xl md:text-7xl lg:text-9xl xl:text-12xl text-gray-100 font-orbi selectNone">
+      00:00:00 AM</p>
+    <p class="mt-10 text-xl sm:text-2xl text-gray-100 selectNone">What are u up to?</p>
+    <p class="text-white text-center mt-2 text-2xl sm:text-3xl px-2 ">
+      &nbsp;
+      <span id="currentFocus" class=" border-white border-b-2" contenteditable="true">[Enter focus]
+      </span>
+    </p>
+  </div>
+  <script src="moment.js"></script>
+  <script src="main.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js")
+        .then(() => console.log("registered"))
+        .catch(err => console.log("error registering", err.message))
+    }
+  </script>
+</body>
+
+</html>
